@@ -2,7 +2,7 @@ Subject: 01117 COMPUTER GRAPHICS. Section: B. FALL 22-23
 
 Course faculty: Md. Masum Billah 
 
-Project titel: 
+Project titel: Arabian nights view
 
 Group member: 
 
