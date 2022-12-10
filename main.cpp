@@ -17,8 +17,8 @@ glColor3ub (255, 191, 128);
 
 glVertex2i(0, 0);
 glVertex2i(0, 200);
-glVertex2i(640, 200);
-glVertex2i(640, 0);
+glVertex2i(840, 200);
+glVertex2i(840, 0);
 glEnd();
 
 //pyramid-l
@@ -67,10 +67,10 @@ glEnd();
 glBegin(GL_QUADS);
 glColor3ub (150, 75, 0);
 
-glVertex2i(50, 50);
-glVertex2i(50, 160);
-glVertex2i(100, 160);
-glVertex2i(100, 50);
+glVertex2i(50, 110);
+glVertex2i(50, 200);
+glVertex2i(100, 200);
+glVertex2i(100, 110);
 
 glEnd();
 
@@ -78,19 +78,19 @@ glEnd();
 glBegin(GL_TRIANGLES);
 glColor3ub (0, 155, 0);
 
-glVertex2i(0, 160);
-glVertex2i(150, 160);
-glVertex2i(75, 290);
+glVertex2i(0, 200);
+glVertex2i(150, 200);
+glVertex2i(75, 320);
 glEnd();
 
 //top quad
 glBegin(GL_QUADS);
 glColor3ub (0, 155, 0);
 
-glVertex2i(30, 160);
-glVertex2i(30, 260);
-glVertex2i(120, 260);
-glVertex2i(120, 160);
+glVertex2i(30, 200);
+glVertex2i(30, 300);
+glVertex2i(120, 300);
+glVertex2i(120, 200);
 
 glEnd();
 
@@ -98,9 +98,9 @@ glEnd();
 glBegin(GL_TRIANGLES);
 glColor3ub (0, 155, 0);
 
-glVertex2i(30, 260);
-glVertex2i(75, 290);
-glVertex2i(120, 260);
+glVertex2i(30, 300);
+glVertex2i(75, 320);
+glVertex2i(120, 300);
 
 glEnd();
 
@@ -108,43 +108,146 @@ glEnd();
 glBegin(GL_TRIANGLES);
 glColor3ub (0, 155, 0);
 
-glVertex2i(100, 190);
-glVertex2i(100, 260);
-glVertex2i(142, 220);
+glVertex2i(100, 230);
+glVertex2i(100, 300);
+glVertex2i(142, 260);
 glEnd();
 
 //r-tri
 glBegin(GL_TRIANGLES);
 glColor3ub (0, 155, 0);
 
-glVertex2i(50, 190);
-glVertex2i(50, 260);
-glVertex2i(8, 220);
+glVertex2i(50, 230);
+glVertex2i(50, 300);
+glVertex2i(8, 260);
 glEnd();
 
 
 
-//sun
-int i1;
-	GLfloat x1=50; GLfloat y1=400; GLfloat radius1 =20;
-	int triangleAmount1 = 20;
-	GLfloat twicePi1 = 2.0f * 3.1416;
+//right top tree
+//tree base
+glBegin(GL_QUADS);
+glColor3ub (150, 75, 0);
 
-	glBegin(GL_TRIANGLE_FAN);
-	glColor3ub(255,255,0);
-		glVertex2f(x1, y1);
-		for(i1 = 0; i1 <= triangleAmount1;i1++) {
-			glVertex2f(
-		            x1 + (radius1 * cos(i1 *  twicePi1 / triangleAmount1)),
-			    y1 + (radius1 * sin(i1 * twicePi1 / triangleAmount1))
-			);
-		}
-	glEnd();
+glVertex2i(370, 130);
+glVertex2i(370, 220);
+glVertex2i(400, 220);
+glVertex2i(400, 130);
+
+glEnd();
+
+//main leaf
+glBegin(GL_TRIANGLES);
+glColor3ub (0, 155, 0);
+
+glVertex2i(350, 200);
+glVertex2i(420, 200);
+glVertex2i(384, 320);
+glEnd();
+
+//r leaf
+glBegin(GL_TRIANGLES);
+glColor3ub (0, 175, 0);
+
+glVertex2i(350, 200);
+glVertex2i(420, 200);
+glVertex2i(450, 300);
+glEnd();
+
+//l leaf
+glBegin(GL_TRIANGLES);
+glColor3ub (0, 255, 0);
+
+glVertex2i(350, 200);
+glVertex2i(420, 200);
+glVertex2i(350, 300);
+glEnd();
+
+//l leaf
+glBegin(GL_TRIANGLES);
+glColor3ub (0, 200, 0);
+
+glVertex2i(350, 200);
+glVertex2i(420, 200);
+glVertex2i(300, 280);
+glEnd();
 
 
-//cloud
+
+//river
+glBegin(GL_QUADS);
+glColor3ub (146, 243, 243);
+
+glVertex2i(0, 40);
+glVertex2i(0, 100);
+glVertex2i(840, 130);
+glVertex2i(840, 70);
+glEnd();
+
+
+//right big tree
+//tree base
+glBegin(GL_QUADS);
+glColor3ub (150, 75, 0);
+
+glVertex2i(750, 30);
+glVertex2i(750, 220);
+glVertex2i(780, 220);
+glVertex2i(780, 30);
+
+glEnd();
+
+//main leaf
+glBegin(GL_TRIANGLES);
+glColor3ub (0, 155, 0);
+
+glVertex2i(720, 220);
+glVertex2i(810, 220);
+glVertex2i(760, 340);
+
+glEnd();
+
+//r leaf
+glBegin(GL_TRIANGLES);
+glColor3ub (0, 175, 0);
+
+glVertex2i(720, 220);
+glVertex2i(810, 220);
+glVertex2i(800, 320);
+glEnd();
+
+//l leaf
+glBegin(GL_TRIANGLES);
+glColor3ub (0, 150, 0);
+
+glVertex2i(720, 220);
+glVertex2i(810, 220);
+glVertex2i(680, 320);
+glEnd();
+
+//l leaf
+glBegin(GL_TRIANGLES);
+glColor3ub (0, 150, 0);
+
+glVertex2i(720, 220);
+glVertex2i(810, 220);
+glVertex2i(650, 280);
+glEnd();
+
+
+
+//r leaf
+glBegin(GL_TRIANGLES);
+glColor3ub (0, 150, 0);
+
+glVertex2i(720, 220);
+glVertex2i(810, 220);
+glVertex2i(850, 280);
+glEnd();
+
+//cloud 1
 int i2;
-	GLfloat x2=550; GLfloat y2=400; GLfloat radius2 =30;
+	GLfloat x2=150; GLfloat y2=400; GLfloat radius2 =30;
 	int triangleAmount2 = 20;
 	GLfloat twicePi2 = 2.0f * 3.1416;
 
@@ -161,7 +264,7 @@ int i2;
 
 
 	int i3;
-	GLfloat x3=580; GLfloat y3=400; GLfloat radius3 =20;
+	GLfloat x3=180; GLfloat y3=400; GLfloat radius3 =20;
 	int triangleAmount3 = 20;
 	GLfloat twicePi3 = 2.0f * 3.1416;
 
@@ -178,7 +281,7 @@ int i2;
 
 
 	int i4;
-	GLfloat x4=510; GLfloat y4=400; GLfloat radius4 =20;
+	GLfloat x4=110; GLfloat y4=400; GLfloat radius4 =20;
 	int triangleAmount4 = 20;
 	GLfloat twicePi4 = 2.0f * 3.1416;
 
@@ -195,15 +298,69 @@ int i2;
 
 
 
+
+//cloud 2
+int i5;
+	GLfloat x5=550; GLfloat y5=400; GLfloat radius5 =30;
+	int triangleAmount5 = 20;
+	GLfloat twicePi5 = 2.0f * 3.1416;
+
+	glBegin(GL_TRIANGLE_FAN);
+	glColor3ub(128, 124, 113);
+		glVertex2f(x5, y5);
+		for(i5 = 0; i5 <= triangleAmount5;i5++) {
+			glVertex2f(
+		            x5 + (radius5 * cos(i5 *  twicePi5 / triangleAmount5)),
+			    y5 + (radius5 * sin(i5 * twicePi5 / triangleAmount5))
+			);
+		}
+	glEnd();
+
+
+	int i6;
+	GLfloat x6=580; GLfloat y6=400; GLfloat radius6 =20;
+	int triangleAmount6 = 20;
+	GLfloat twicePi6 = 2.0f * 3.1416;
+
+	glBegin(GL_TRIANGLE_FAN);
+	glColor3ub(128, 124, 113);
+		glVertex2f(x6, y6);
+		for(i6 = 0; i6 <= triangleAmount6;i6++) {
+			glVertex2f(
+		            x6 + (radius6 * cos(i6 *  twicePi6 / triangleAmount6)),
+			    y3 + (radius6 * sin(i6 * twicePi6 / triangleAmount6))
+			);
+		}
+	glEnd();
+
+
+	int i7;
+	GLfloat x7=510; GLfloat y7=400; GLfloat radius7 =20;
+	int triangleAmount7 = 20;
+	GLfloat twicePi7 = 2.0f * 3.1416;
+
+	glBegin(GL_TRIANGLE_FAN);
+	glColor3ub(128, 124, 113);
+		glVertex2f(x7, y7);
+		for(i7 = 0; i7 <= triangleAmount7; i7++) {
+			glVertex2f(
+		            x7 + (radius7 * cos(i7 *  twicePi7 / triangleAmount7)),
+			    y7 + (radius7 * sin(i7 * twicePi7 / triangleAmount7))
+			);
+		}
+	glEnd();
+
+
+
 glFlush ();
 }
 
 void myInit (void)
 {
-glClearColor(0, 1, 1, 1);
+glClearColor(.3, .4, 1, 1);
 glMatrixMode(GL_PROJECTION);
 glLoadIdentity();
-gluOrtho2D(0.0, 640.0, 0.0, 480.0);
+gluOrtho2D(0.0, 840.0, 0.0, 480.0);
 }
 
 
@@ -214,7 +371,7 @@ int main(int argc, char** argv)
 {
 glutInit(&argc, argv);
 glutInitDisplayMode (GLUT_SINGLE | GLUT_RGB);
-glutInitWindowSize (640, 480);
+glutInitWindowSize (840, 480);
 glutInitWindowPosition (200, 200);
 glutCreateWindow ("");
 glutDisplayFunc(myDisplay);
