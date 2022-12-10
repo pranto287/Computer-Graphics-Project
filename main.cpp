@@ -12,7 +12,14 @@ glPointSize(5.0);
 
 
 //land
+glBegin(GL_QUADS);
+glColor3ub (255, 191, 128);
 
+glVertex2i(0, 0);
+glVertex2i(0, 200);
+glVertex2i(640, 200);
+glVertex2i(640, 0);
+glEnd();
 
 //pyramid-l
 //back
@@ -38,7 +45,14 @@ glEnd();
 
 //pyramid-r
 //back
+glBegin(GL_TRIANGLES);
+glColor3ub (150, 75, 0);
 
+glVertex2i(320, 200);
+glVertex2i(640, 200);
+glVertex2i(480, 400);
+
+glEnd();
 //front
 glBegin(GL_TRIANGLES);
 glColor3ub (255, 153, 51);
@@ -50,7 +64,15 @@ glVertex2i(480, 400);
 glEnd();
 
 //tree base
+glBegin(GL_QUADS);
+glColor3ub (150, 75, 0);
 
+glVertex2i(50, 50);
+glVertex2i(50, 160);
+glVertex2i(100, 160);
+glVertex2i(100, 50);
+
+glEnd();
 
 //main leaf
 glBegin(GL_TRIANGLES);
@@ -62,14 +84,43 @@ glVertex2i(75, 290);
 glEnd();
 
 //top quad
+glBegin(GL_QUADS);
+glColor3ub (0, 155, 0);
+
+glVertex2i(30, 160);
+glVertex2i(30, 260);
+glVertex2i(120, 260);
+glVertex2i(120, 160);
+
+glEnd();
 
 //top tri
+glBegin(GL_TRIANGLES);
+glColor3ub (0, 155, 0);
 
+glVertex2i(30, 260);
+glVertex2i(75, 290);
+glVertex2i(120, 260);
+
+glEnd();
 
 //r-tri
+glBegin(GL_TRIANGLES);
+glColor3ub (0, 155, 0);
+
+glVertex2i(100, 190);
+glVertex2i(100, 260);
+glVertex2i(142, 220);
+glEnd();
 
 //r-tri
+glBegin(GL_TRIANGLES);
+glColor3ub (0, 155, 0);
 
+glVertex2i(50, 190);
+glVertex2i(50, 260);
+glVertex2i(8, 220);
+glEnd();
 
 
 
