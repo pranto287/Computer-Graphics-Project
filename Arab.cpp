@@ -11,6 +11,48 @@ glColor3ub (128, 128, 128);
 glPointSize(5.0);
 
 
+//land
+glBegin(GL_QUADS);
+glColor3ub (255, 191, 128);
+
+glVertex2i(0, 0);
+glVertex2i(0, 200);
+glVertex2i(840, 200);
+glVertex2i(840, 0);
+glEnd();
+
+//pyramid-l
+//back
+glBegin(GL_TRIANGLES);
+glColor3ub (150, 75, 0);
+
+glVertex2i(20, 200);
+glVertex2i(340, 200);
+glVertex2i(180, 380);
+
+glEnd();
+
+//front
+glBegin(GL_TRIANGLES);
+glColor3ub (255, 153, 51);
+
+glVertex2i(20, 200);
+glVertex2i(300, 200);
+glVertex2i(180, 380);
+
+glEnd();
+
+
+//pyramid-r
+//back
+glBegin(GL_TRIANGLES);
+glColor3ub (150, 75, 0);
+
+glVertex2i(320, 200);
+glVertex2i(640, 200);
+glVertex2i(480, 400);
+
+glEnd();
 
 
 
