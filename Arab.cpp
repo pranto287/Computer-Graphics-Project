@@ -6,6 +6,12 @@
 
 void myDisplay(void)
 {
+glClear (GL_COLOR_BUFFER_BIT);
+glColor3ub (128, 128, 128);
+glPointSize(5.0);
+
+
+
 
 
 glFlush ();
