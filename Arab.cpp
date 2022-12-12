@@ -6,6 +6,28 @@
 
 void myDisplay(void)
 {
+glClear (GL_COLOR_BUFFER_BIT);
+glColor3ub (128, 128, 128);
+glPointSize(5.0);
+
+
+
+
+
+
+//river
+glBegin(GL_QUADS);
+glColor3ub (146, 243, 243);
+
+glVertex2i(0, 40);
+glVertex2i(0, 100);
+glVertex2i(840, 130);
+glVertex2i(840, 70);
+glEnd();
+
+
+
+
 
 glFlush ();
 }
