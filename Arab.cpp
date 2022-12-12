@@ -11,6 +11,31 @@ glColor3ub (128, 128, 128);
 glPointSize(5.0);
 
 
+//land
+glBegin(GL_QUADS);
+glColor3ub (255, 191, 128);
+
+glVertex2i(0, 0);
+glVertex2i(0, 200);
+glVertex2i(840, 200);
+glVertex2i(840, 0);
+glEnd();
+
+//pyramid-l
+//back
+
+
+glEnd();
+
+//front
+glBegin(GL_TRIANGLES);
+glColor3ub (255, 153, 51);
+
+glVertex2i(20, 200);
+glVertex2i(300, 200);
+glVertex2i(180, 380);
+
+glEnd();
 
 
 
@@ -24,10 +49,6 @@ glMatrixMode(GL_PROJECTION);
 glLoadIdentity();
 gluOrtho2D(0.0, 840.0, 0.0, 480.0);
 }
-
-
-
-
 
 int main(int argc, char** argv)
 {
