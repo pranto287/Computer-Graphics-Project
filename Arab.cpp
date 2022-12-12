@@ -5,6 +5,18 @@
 
 
 
+void myInit (void)
+{
+glClearColor(.3, .4, 1, 1);
+glMatrixMode(GL_PROJECTION);
+glLoadIdentity();
+gluOrtho2D(0.0, 840.0, 0.0, 480.0);
+}
+
+
+
+
+
 int main(int argc, char** argv)
 {
 glutInit(&argc, argv);
