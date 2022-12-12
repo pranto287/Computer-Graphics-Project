@@ -11,7 +11,6 @@ glColor3ub (128, 128, 128);
 glPointSize(5.0);
 
 
-
 glFlush ();
 }
 
