@@ -4,6 +4,12 @@
 #include<cmath>
 
 
+void myDisplay(void)
+{
+
+
+glFlush ();
+}
 
 void myInit (void)
 {
