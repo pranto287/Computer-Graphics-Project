@@ -511,7 +511,35 @@ glFlush ();
 
 void myInit (void)
 {
-glClearColor(.3, .4, 1, 1);
+
+int r=0,g=0,b=0,a=0;
+    char time;
+    scanf("%s",&time);
+
+    if(time=='d')
+    {
+        r=1;
+        g=1;
+        b=1;
+        a=1;
+    }
+    else if(time =='n')
+    {
+        r=0;
+        g=0;
+        b=0;
+        a=0;
+    }
+    else if(time =='e')
+    {
+        r=0.3;
+        g=0.4;
+        b=1;
+        a=1;
+    }
+
+glClearColor(r, g, b, a);
+
 glMatrixMode(GL_PROJECTION);
 glLoadIdentity();
 gluOrtho2D(0.0, 840.0, 0.0, 480.0);
